@@ -1,0 +1,35 @@
+<br>
+
+<nav class="navbar navbar-light" style="background-color: #A60311;">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+    <div class="container-fluid">
+        <!-- <button (click)="Agregar()" class="btn btn-second ">Nuevo Dato de Facturación</button> -->
+        <button class="btn btn-second "></button>
+        <div class="d-flex">
+            <input class="form-control" (keyup)="doFilter($event)" placeholder="🔎 Buscar" aria-label="Buscar">
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="card-group">
+        <div *ngFor="let clientes of clienteslista">
+            <div class="card" style="width: 19rem; margin: 10px;">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <img src="../../../assets/icono.png" class="card-img-top card-imagen"> {{clientes.nombres}}
+                    </h5>
+                    <p class="card-text m-1">{{clientes.numeroControl}}</p>
+                    <button (click)="Ver(clientes.id)" class="btn btn-dark m-1">Ver</button>
+                    <button (click)="Actualizar(clientes.id)" class="btn btn-secondary ">Actualizar</button>
+                    <button (click)="eliminarClientes(clientes.id)" class="btn btn-danger m-1">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>

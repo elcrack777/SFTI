@@ -1,0 +1,161 @@
+<br>
+<br>
+
+<div class="starter-template">
+    <div class="card">
+        <div class="card-header">
+            <h3>{{titulo}}</h3>
+        </div>
+        <div class="card-body">
+            <form [formGroup]="formActualizar" (ngSubmit)="onSubmit()">
+                <div class="form-group row g-3">
+
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Número de Control: </label>
+                            <input type="number" formControlName="numeroControl" class="form-control" [ngClass]="{'is-invalid': submitted && f.numeroControl.errors }" />
+                            <div *ngIf="submitted && f.numeroControl.errors" class="invalid-feedback">
+                                <div *ngIf="submitted && f.numeroControl.errors.required">Ingrese el Usuario</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Nombres: </label>
+                            <input type="text" formControlName="nombres" class="form-control" [ngClass]="{'is-invalid': submitted && f.nombres.errors }" />
+                            <div *ngIf="submitted && f.nombres.errors" class="invalid-feedback">
+                                <div *ngIf="submitted && f.nombres.errors.required">Ingrese el dato</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Apellido Paterno: </label>
+                            <input type="text" formControlName="apaterno" class="form-control" [ngClass]="{'is-invalid': submitted && f.apaterno.errors }" />
+                            <div *ngIf="submitted && f.apaterno.errors" class="invalid-feedback">
+                                <div *ngIf="submitted && f.apaterno.errors.required">Ingrese el dato</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Apellido Materno: </label>
+                            <input type="text" formControlName="amaterno" class="form-control" [ngClass]="{'is-invalid': submitted && f.amaterno.errors }" />
+                            <div *ngIf="submitted && f.amaterno.errors" class="invalid-feedback">
+                                <div *ngIf="submitted && f.amaterno.errors.required">Ingrese el dato</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Tipo de Persona: </label>
+                            <select type="text" formControlName="tdp" class="form-control" [ngClass]="{'is-invalid': submitted && f.tdp.errors }" id="pet-select">
+                        <option value="moral">Moral</option>
+                        <option value="fisica">Fisica</option>
+                        <div *ngIf="submitted && f.tdp.errors" class="invalid-feedback">
+                            <div *ngIf="submitted && f.tdp.errors.required">Ingrese el dato</div>
+                        </div>
+                        </select>
+
+                            <!-- <input type="text" formControlName="tdp" class="form-control" [ngClass]="{'is-invalid': submitted && f.tdp.errors }" />
+                        <div *ngIf="submitted && f.tdp.errors" class="invalid-feedback">
+                            <div *ngIf="submitted && f.tdp.errors.required">Ingrese el dato</div>
+                        </div> -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>RFC: </label>
+                            <input type="text" formControlName="rfc" class="form-control" [ngClass]="{'is-invalid': submitted && f.rfc.errors }" />
+                            <div *ngIf="submitted && f.rfc.errors" class="invalid-feedback">
+                                <div *ngIf="submitted && f.rfc.errors.required">Ingrese el dato</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Calle: </label>
+                            <input type="text" formControlName="calle" class="form-control" [ngClass]="{'is-invalid': submitted && f.calle.errors }" />
+                            <div *ngIf="submitted && f.calle.errors" class="invalid-feedback">
+                                <div *ngIf="submitted && f.calle.errors.required">Ingrese el dato</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Colonia: </label>
+                            <input type="text" formControlName="colonia" class="form-control" [ngClass]="{'is-invalid': submitted && f.colonia.errors }" />
+                            <div *ngIf="submitted && f.colonia.errors" class="invalid-feedback">
+                                <div *ngIf="submitted && f.colonia.errors.required">Ingrese el dato</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>N° EXT-INT: </label>
+                            <input type="number" formControlName="extint" class="form-control" [ngClass]="{'is-invalid': submitted && f.extint.errors }" />
+                            <div *ngIf="submitted && f.extint.errors" class="invalid-feedback">
+                                <div *ngIf="submitted && f.extint.errors.required">Ingrese el dato</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Correo : </label>
+                            <input type="email" formControlName="correo" placeholder="sophie@example.com" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" class="form-control" [ngClass]="{'is-invalid': submitted && f.correo.errors }" />
+                            <div *ngIf="submitted && f.correo.errors" class="invalid-feedback">
+                                <div *ngIf="submitted && f.correo.errors.required">Ingrese el dato</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-md-4"></div> -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Telefono: </label>
+                            <input type="number" formControlName="telefono" class="form-control" [ngClass]="{'is-invalid': submitted && f.telefono.errors }" />
+                            <div *ngIf="submitted && f.telefono.errors" class="invalid-feedback">
+                                <div *ngIf="submitted && f.telefono.errors.required">Ingrese el dato</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Codigo Postal: </label>
+                            <input type="number" formControlName="cp" class="form-control" [ngClass]="{'is-invalid': submitted && f.cp.errors }" />
+                            <div *ngIf="submitted && f.cp.errors" class="invalid-feedback">
+                                <div *ngIf="submitted && f.cp.errors.required">Ingrese el dato</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4"></div>
+
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-12 col-md-offset-9 text-right">
+                        <div class="btn-group d-flex w-100" role="group">&nbsp;
+                            <button (click)="Volver()" type="button" class="btn btn-primary">Regresar </button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-primary" (click)="actualizarDatos()">Actualizar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>

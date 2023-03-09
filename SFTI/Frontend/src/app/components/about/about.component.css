@@ -1,0 +1,592 @@
+.grid {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+
+.grid div {
+    text-align: center;
+    margin: 5px;
+    padding: 1em;
+    /* background-color: rgb(162, 217, 221); */
+    background-color: #333;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.grid div:hover {
+    /* border: 1px solid rgb(9, 19, 112); */
+    border: 3px solid #c00e17;
+}
+
+h3 {
+    color: #c00e17;
+}
+
+h6 {
+    text-align: justify;
+}
+
+
+/* CSS TESTIMONIALS */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+h2 {
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    min-height: 100vh;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 0;
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    overflow: hidden;
+    max-width: 100%;
+    width: 400px;
+    height: 570px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.testimonial-body {
+    padding: 40px 40px 80px;
+}
+
+.testimonial-body p {
+    color: #555;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0;
+    text-align: justify;
+}
+
+.testimonial-body .fa-quote-right {
+    color: #eee;
+    font-size: 40px;
+    float: right;
+}
+
+.testimonial-footer {
+    background-color: #c00e17;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonial-footer img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    height: 120px;
+    width: 120px;
+    margin-top: -100px;
+}
+
+.testimonial-footer h3 {
+    margin: 10px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.testimonial-footer h4 {
+    color: #000000;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+
+/* CSS FLIP CARD */
+
+* {
+    box-sizing: border-box;
+    font-weight: 400
+}
+
+body {
+    color: #555;
+    background: #333;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    padding: 1em;
+}
+
+h1 {
+    font-size: 2.2em
+}
+
+.flip {
+    right: 5.5%;
+    left: 5.5%;
+}
+
+.flip>.back,
+.flip>.front {
+    transition-timing-function: cubic-bezier(0.175, .885, .32, 1.275);
+    transition-duration: .5s;
+    transition-property: transform, opacity
+}
+
+.flip>.front {
+    transform: rotateY(0deg)
+}
+
+.flip>.back {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transform: rotateY(-180deg)
+}
+
+.flip:hover>.front {
+    transform: rotateY(180deg)
+}
+
+.flip:hover>.back {
+    opacity: 1;
+    transform: rotateY(0deg)
+}
+
+.flip.flip-vertical>.back {
+    transform: rotateX(-180deg)
+}
+
+.flip.flip-vertical:hover>.front {
+    transform: rotateX(180deg)
+}
+
+.flip.flip-vertical:hover>.back {
+    transform: rotateX(0deg)
+}
+
+.flip {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px
+}
+
+.flip>.back,
+.flip>.front {
+    display: block;
+    color: #fff;
+    width: inherit;
+    background-size: cover!important;
+    background-position: center!important;
+    height: 400px;
+    padding: 1em 2em;
+    background: #313131;
+    border-radius: 10px
+}
+
+.flip>.back p,
+.flip>.front p {
+    font-size: .9525rem;
+    line-height: 160%;
+    color: #fff;
+    text-align: justify;
+}
+
+span {
+    font-size: .9825rem;
+    line-height: 160%;
+    color: #FFCD0E;
+    text-align: justify;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px rgba(0, 0, 0, .04), 2px 2px rgba(0, 0, 0, .04), 3px 3px rgba(0, 0, 0, .04), 4px 4px rgba(0, 0, 0, .04), .125rem .125rem rgba(0, 0, 0, .04), 6px 6px rgba(0, 0, 0, .04), 7px 7px rgba(0, 0, 0, .04), 8px 8px rgba(0, 0, 0, .04), 9px 9px rgba(0, 0, 0, .04), .3125rem .3125rem rgba(0, 0, 0, .04), 11px 11px rgba(0, 0, 0, .04), 12px 12px rgba(0, 0, 0, .04), 13px 13px rgba(0, 0, 0, .04), 14px 14px rgba(0, 0, 0, .04), .625rem .625rem rgba(0, 0, 0, .04), 16px 16px rgba(0, 0, 0, .04), 17px 17px rgba(0, 0, 0, .04), 18px 18px rgba(0, 0, 0, .04), 19px 19px rgba(0, 0, 0, .04), 1.25rem 1.25rem rgba(0, 0, 0, .04)
+}
+
+
+/*
+h2 {
+color: #000000;
+} */
+
+.back {
+    color: #000000;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #1c1c1c;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #fff;
+    padding: 30px 0;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-6 {
+    width: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+h3 {
+    margin-top: 0;
+    color: #A60311;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-container img {
+    margin-right: 20px;
+    width: 200px;
+    animation: mover-imagen 3s ease-in-out infinite alternate;
+}
+
+@keyframes mover-imagen {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.alineado {
+    width: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-sm-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.col-md-4 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+}
+
+.cont {
+    width: 1340px;
+}
+
+.dj-banner {
+    margin: 30px 0;
+    height: 200px;
+    position: relative;
+    background-color: #37474F;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.dj-banner .dj-bg {
+    /* background-image: url(../../assets/Carros/b1.jpeg); */
+    background-color: #3F5259;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    width: 100%;
+}
+
+.dj-banner .dj-bg img {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 0;
+}
+
+.dj-banner .dj-text {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .dj-banner .dj-bg img {
+        margin-right: 100px;
+    }
+    .dj-banner .dj-text {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(-10%, -50%);
+        width: 50%;
+        text-align: left;
+    }
+    .dj-banner .dj-text h1 {
+        font-size: calc(2*1.5vw);
+    }
+    .dj-banner .dj-text p {
+        font-size: calc(0.8*1.5vw);
+    }
+}
+
+
+/* PARALLAX */
+
+
+/* UGG SITE */
+
+#main {
+    width: 100%;
+    padding: 0;
+}
+
+.content-asset p {
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.breadcrumb {
+    display: none;
+}
+
+
+/* HELPERS */
+
+.margin-top-10 {
+    padding-top: 10px;
+}
+
+.margin-bot-10 {
+    padding-bottom: 10px;
+}
+
+
+/* LETRA */
+
+#parallax-world-of-ugg h1 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+#parallax-world-of-ugg h2 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: .9;
+}
+
+#parallax-world-of-ugg h3 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 14px;
+    line-height: 0;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+#parallax-world-of-ugg p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.first-character {
+    font-weight: 400;
+    float: left;
+    font-size: 84px;
+    line-height: 64px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.sc {
+    color: #e90606;
+}
+
+.ny {
+    color: #3d3c3a;
+}
+
+.atw {
+    color: #c48660;
+}
+
+
+/* TITULO */
+
+#parallax-world-of-ugg .title {
+    background: white;
+    padding: 60px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+#parallax-world-of-ugg .title h1 {
+    font-size: 35px;
+    letter-spacing: 8px;
+    font-weight: bold;
+    color: #A60311;
+}
+
+
+/* BLOCK */
+
+#parallax-world-of-ugg .block {
+    background: white;
+    padding: 60px;
+    width: 820px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#parallax-world-of-ugg .block-gray {
+    background: #f2f2f2;
+    padding: 60px;
+}
+
+#parallax-world-of-ugg .section-overlay-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.70;
+}
+
+
+/* SECCION - PARALLLAX */
+
+#parallax-world-of-ugg .parallax-one {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(https://toyotacredito.com.co/sites/default/files/2022-09/Campa%C3%B1as%20vigentes-02.png);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+/* EXTRAS */
+
+#parallax-world-of-ugg .line-break {
+    border-bottom: 1px solid black;
+    width: 150px;
+    margin: 0 auto;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 959px) and (min-width: 768px) {
+    #parallax-world-of-ugg .block {
+        padding: 40px;
+        width: 620px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #parallax-world-of-ugg .block {
+        padding: 30px;
+        width: 420px;
+    }
+    #parallax-world-of-ugg h2 {
+        font-size: 30px;
+    }
+    #parallax-world-of-ugg .block {
+        padding: 30px;
+    }
+    #parallax-world-of-ugg .parallax-one,
+    #parallax-world-of-ugg .parallax-two,
+    #parallax-world-of-ugg .parallax-three {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #parallax-world-of-ugg .block {
+        padding: 30px 15px;
+        width: 290px;
+    }
+}
+
+
+/* FOOTER SOLO */
+
+.f-container {
+    background-color: #000;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: bold;
+}
+
+a {
+    color: #A60311;
+    text-align: center;
+}
+
+p {
+    color: #fff;
+    text-align: center;
+}

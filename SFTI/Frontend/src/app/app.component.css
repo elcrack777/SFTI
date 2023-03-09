@@ -1,0 +1,48 @@
+body {
+    /* font-family: 'Zen Loop', cursive; */
+    background: #fff;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+a {
+    font-family: 'Balsamiq Sans', cursive;
+    color: #fff;
+}
+
+.navbar-brand {
+    color: #bdbdbd;
+    font-weight: bold;
+}
+
+.btn-outline-danger {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.btn-outline-success {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+
+/*
+.nav-link {
+color: #000;
+}
+
+.nav-item {
+color: #000;
+}
+
+.navbar-brand {
+color: #fff;
+}
+
+.navbar-expand-lg {
+background-color: #fff;
+color: #fff;
+}
+
+.navbar-nav {
+color: #fff;
+}
+
+*/

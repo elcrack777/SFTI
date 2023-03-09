@@ -1,0 +1,61 @@
+<section class="h-100 gradient-form">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-xl-10">
+                <div class="card rounded-3 text-black">
+                    <div class="row g-0">
+                        <div class="col-lg-6">
+                            <div class="card-body p-md-5 mx-md-4">
+
+                                <div class="text-center">
+                                    <img src="https://brandemia.org/sites/default/files/inline/images/toyota_logo_portada.jpg" style="width: 185px;" alt="logo">
+                                    <h4 class="mt-1 mb-5 pb-1">INICIO DE SESIÓN.</h4>
+                                </div>
+
+                                <form>
+                                    <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+                                        <div class="form-group">
+                                            <label>Usuario: </label>
+                                            <input [(ngModel)]="usuarios.Usuario" type="text" formControlName="Usuario" class="form-control" [ngClass]="{'is-invalid': submitted && f.Usuario.errors }" />
+                                            <div *ngIf="submitted && f.Usuario.errors" class="invalid-feedback">
+                                                <div *ngIf="submitted && f.Usuario.errors.required">Ingrese el Usuario</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Contraseña: </label>
+                                            <input [(ngModel)]="usuarios.Contra" type="password" formControlName="Contra" class="form-control" [ngClass]="{'is-invalid': submitted && f.Contra.errors }" />
+                                            <div *ngIf="submitted && f.Contra.errors" class="invalid-feedback">
+                                                <div *ngIf="submitted && f.Contra.errors.required">Ingrese la contraseña</div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </form>
+                                <br>
+                                <br>
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <button class="btn btn-danger" (click)="logIn()">Iniciar Sesión</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                            <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                                <h4 class="mb-4">¿Qué significa la palabra Toyota en japonés?</h4>
+                                <p class="small mb-0">Cuando se comenzó con esta actividad, se empleaba el nombre de Toyoda, que en castellano no suena mal y tampoco tiene significado, pero en japonés significa 'campo de arroz fecundo'.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+<br>
+<br>
+
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>

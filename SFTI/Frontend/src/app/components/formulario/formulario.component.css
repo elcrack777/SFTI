@@ -1,0 +1,121 @@
+.card {
+    padding: 10px !important;
+    /* border: 1px solid cadetblue; */
+    border: 1px solid #0064A8;
+    grid-template-columns: 50% 50%;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.card-imagen {
+    width: 30%;
+}
+
+.fond {
+    /* background-color: rgb(183, 216, 216); */
+    background-color: #A60311;
+}
+
+.btn-second {
+    background-color: #A60311;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.btn-dark {
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: #000;
+}
+
+.btn-secondary {
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: #37474F;
+}
+
+.btn-danger {
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: #A60311;
+}
+
+.form-control {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+
+/* .navbar-light {
+    width: 1000px;
+    align-items: center;
+    position: relative;
+} */
+
+.navbar-light {
+    position: relative;
+    left: 45%;
+    transform: translatex(-45%);
+    width: 1150px;
+}
+
+.container-fluid {
+    position: static;
+}
+
+.container {
+    border: #37474F;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+
+/* CSS FONDO ANIMADO */
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #37474F 50%, #fff 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: .25em;
+    box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+    box-sizing: border-box;
+    left: 50%;
+    padding: 10vmin;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}

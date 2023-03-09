@@ -1,0 +1,174 @@
+/* .rounded {
+    width: 470px;
+    height: 160px;
+    align-items: center;
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 230px;
+    border-radius: 350px;
+    border: 1px solid #666;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    border-radius: 50%;
+} */
+
+
+/* CSS DE LOGIN */
+
+.circular--portrait {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circular--portrait img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* CSS FONDO ANIMADO */
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #e90606 50%, #fff 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: .25em;
+    box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+    box-sizing: border-box;
+    left: 50%;
+    padding: 10vmin;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+
+/* CSS CONTAINER */
+
+
+/*
+.form-group {
+    margin: 2px;
+    padding: 1px;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.btn-danger {
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: #A60311;
+}
+
+.row {
+    width: 1200px;
+    right: 10%;
+    left: 30%;
+    margin: 0 auto;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.form-control {
+    font-family: 'Balsamiq Sans', cursive;
+    color: #262626;
+}
+*/
+
+
+/* LOGIN */
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #212121;
+    /* Chrome 10-25, Safari 5.1-6 */
+    /*background: -webkit-linear-gradient(to right, #ccc, #595959, #ddd, #A60311);*/
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background: linear-gradient(to right, #e90606, #c00404, #473f42, #333);*/
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
+.py-5 {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.btn-danger {
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: #e90606;
+}
+
+.mt-1 {
+    font-family: 'Balsamiq Sans', cursive;
+    color: #e90606;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+}
+
+h4 {
+    text-align: center;
+    color: #e90606;
+    font-weight: bold;
+}

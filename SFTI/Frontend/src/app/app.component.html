@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+    </style>
+
+    <img src="../assets/logo3.png" width="70px" height="50px">&nbsp;&nbsp;
+
+    <a class="navbar-brand" href="/home">SFTI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home" routerLinkActive="active">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/about" routerLinkActive="active">Quienes Somos</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link disabled" routerLink="formulario" routerLinkActive="active">Factura Clientes</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="agregar" routerLinkActive="active">Datos de Facturación</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="login" routerLinkActive="active">Iniciar Sesión</a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+
+
+<router-outlet></router-outlet>
